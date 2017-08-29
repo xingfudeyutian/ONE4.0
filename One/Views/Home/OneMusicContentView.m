@@ -141,7 +141,6 @@
     self.titleL.text = cellHeight.contentModel.title;
     self.authorL.text = [NSString stringWithFormat:@"文／%@",cellHeight.contentModel.author.user_name];
     [self.pictureImageV setImageWithURL:[NSURL URLWithString:cellHeight.contentModel.img_url] placeholder:nil];
-    self.pictureImageV.centerX = self.centerX;
     
     self.descL.text = [NSString stringWithFormat:@"%@ ･ %@|%@",cellHeight.contentModel.music_name,cellHeight.contentModel.audio_author,cellHeight.contentModel.audio_album];
     self.contentL.text = cellHeight.contentModel.forward;

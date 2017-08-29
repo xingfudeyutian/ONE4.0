@@ -11,6 +11,7 @@
 #import "OneListCellHeight.h"
 #import "OneContentCellHeight.h"
 #import "OneMusicContentCellHeight.h"
+#import "OneMovieContentCellHeight.h"
 
 @interface OneBaseViewController : UIViewController
 

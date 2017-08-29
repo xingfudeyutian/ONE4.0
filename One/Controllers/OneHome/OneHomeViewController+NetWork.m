@@ -14,10 +14,10 @@
  
 - (void)requestHomeDataWithId
 {
-    //首页文章，可滑动显示10天之内的
-    NSString * api =[NSString stringWithFormat:@"%@/0/北京市",Channel];
+    //首页文章
+    NSString * api =[NSString stringWithFormat:@"%@/2017-08-28/北京市",Channel];
     api = [api stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [OneHttpManager get:[OneHttpManager urlWithApi:api] params:@"platform=ios&sign=78153e725b54f19bb57778fb3af765a0&user_id=&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.2 HTTP/1.1" success:^(id responseObject) {
+    [OneHttpManager get:[OneHttpManager urlWithApi:api] params:@"platform=ios&sign=78153e725b54f19bb57778fb3af765a0&user_id=&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=" success:^(id responseObject) {
         if ([responseObject[@"res"] integerValue] == 0)
         {
            
@@ -60,6 +60,13 @@
                     case 4://音乐
                     {
                         OneMusicContentCellHeight * cellHeight = [[OneMusicContentCellHeight alloc] init];
+                        cellHeight.contentModel = model;
+                        [self.listCellHeightArray addObject:cellHeight];
+                    }
+                        break;
+                    case 5://影视
+                    {
+                        OneMovieContentCellHeight * cellHeight = [[OneMovieContentCellHeight alloc] init];
                         cellHeight.contentModel = model;
                         [self.listCellHeightArray addObject:cellHeight];
                     }

@@ -10,6 +10,7 @@
 #import "OneContentCell.h"
 #import "OneTopCell.h"
 #import "OneMusicContentCell.h"
+#import "OneMovieCell.h"
 
 @interface OneBaseViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
@@ -127,7 +128,14 @@
 {
     return self.listCellHeightArray.count;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 500;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new];
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     OneListCellHeight * listCellHeight = self.listCellHeightArray[indexPath.row];
@@ -173,6 +181,13 @@
             OneMusicContentCell * musicContentCell = [OneMusicContentCell cellWithTableView:tableView];
             musicContentCell.musicCellHeight = self.listCellHeightArray[indexPath.row];
             return musicContentCell;
+        }
+            break;
+        case 5:
+        {
+            OneMovieCell * movieContentCell = [OneMovieCell cellWithTableView:tableView];
+            movieContentCell.movieCellHeight = self.listCellHeightArray[indexPath.row];
+            return movieContentCell;
         }
             break;
         default:

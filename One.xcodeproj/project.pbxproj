@@ -39,6 +39,9 @@
 		B5773A8E1F4A85E80034CE81 /* OneDiaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5773A8D1F4A85E80034CE81 /* OneDiaryModel.m */; };
 		B5773A911F4A88110034CE81 /* OneMeViewController+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = B5773A901F4A88110034CE81 /* OneMeViewController+NetWork.m */; };
 		B5773A941F4AB88E0034CE81 /* OneMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5773A931F4AB88E0034CE81 /* OneMoreView.m */; };
+		B57E436B1F553E3E00DEC237 /* OneMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57E436A1F553E3E00DEC237 /* OneMovieCell.m */; };
+		B57E436E1F553EBE00DEC237 /* OneMovieContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57E436D1F553EBE00DEC237 /* OneMovieContentView.m */; };
+		B57E43711F553EE500DEC237 /* OneMovieContentCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B57E43701F553EE500DEC237 /* OneMovieContentCellHeight.m */; };
 		B57E4A781F500FDB00F6E482 /* OneMusicContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B57E4A771F500FDB00F6E482 /* OneMusicContentCell.m */; };
 		B57F0D6A1F41991400FD1AB7 /* OneAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F0D661F41991400FD1AB7 /* OneAllViewController.m */; };
 		B57F0D6B1F41991400FD1AB7 /* OneMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57F0D691F41991400FD1AB7 /* OneMeViewController.m */; };
@@ -136,6 +139,12 @@
 		B5773A901F4A88110034CE81 /* OneMeViewController+NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OneMeViewController+NetWork.m"; sourceTree = "<group>"; };
 		B5773A921F4AB88E0034CE81 /* OneMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMoreView.h; sourceTree = "<group>"; };
 		B5773A931F4AB88E0034CE81 /* OneMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMoreView.m; sourceTree = "<group>"; };
+		B57E43691F553E3E00DEC237 /* OneMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMovieCell.h; sourceTree = "<group>"; };
+		B57E436A1F553E3E00DEC237 /* OneMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMovieCell.m; sourceTree = "<group>"; };
+		B57E436C1F553EBE00DEC237 /* OneMovieContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMovieContentView.h; sourceTree = "<group>"; };
+		B57E436D1F553EBE00DEC237 /* OneMovieContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMovieContentView.m; sourceTree = "<group>"; };
+		B57E436F1F553EE500DEC237 /* OneMovieContentCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMovieContentCellHeight.h; sourceTree = "<group>"; };
+		B57E43701F553EE500DEC237 /* OneMovieContentCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMovieContentCellHeight.m; sourceTree = "<group>"; };
 		B57E4A761F500FDB00F6E482 /* OneMusicContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMusicContentCell.h; sourceTree = "<group>"; };
 		B57E4A771F500FDB00F6E482 /* OneMusicContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMusicContentCell.m; sourceTree = "<group>"; };
 		B57F0D651F41991400FD1AB7 /* OneAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneAllViewController.h; sourceTree = "<group>"; };
@@ -281,6 +290,8 @@
 				B53CD19F1F42881100268C7C /* OneListModel.m */,
 				B53B4B9B1F4ED26C0035B334 /* OneMusicContentCellHeight.h */,
 				B53B4B9C1F4ED26C0035B334 /* OneMusicContentCellHeight.m */,
+				B57E436F1F553EE500DEC237 /* OneMovieContentCellHeight.h */,
+				B57E43701F553EE500DEC237 /* OneMovieContentCellHeight.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -320,10 +331,14 @@
 				B53CD1A61F42881D00268C7C /* OneContentCell.m */,
 				B57E4A761F500FDB00F6E482 /* OneMusicContentCell.h */,
 				B57E4A771F500FDB00F6E482 /* OneMusicContentCell.m */,
+				B57E43691F553E3E00DEC237 /* OneMovieCell.h */,
+				B57E436A1F553E3E00DEC237 /* OneMovieCell.m */,
 				B53CD1A71F42881D00268C7C /* OneContentView.h */,
 				B53CD1A81F42881D00268C7C /* OneContentView.m */,
 				B53B4B981F4ED0F20035B334 /* OneMusicContentView.h */,
 				B53B4B991F4ED0F20035B334 /* OneMusicContentView.m */,
+				B57E436C1F553EBE00DEC237 /* OneMovieContentView.h */,
+				B57E436D1F553EBE00DEC237 /* OneMovieContentView.m */,
 				B53CD1A91F42881D00268C7C /* OneMenuView.h */,
 				B53CD1AA1F42881D00268C7C /* OneMenuView.m */,
 				B53CD1AB1F42881D00268C7C /* OneTroposphereCell.h */,
@@ -644,7 +659,9 @@
 				B53CD1B81F429A9D00268C7C /* OneClassifyCell.m in Sources */,
 				B58488D81F06458E00ED92ED /* AppDelegate.m in Sources */,
 				B53CD1BB1F42D03200268C7C /* OneSubjectCell.m in Sources */,
+				B57E436B1F553E3E00DEC237 /* OneMovieCell.m in Sources */,
 				B55B05EE1F46C4A8009550D2 /* OneAskCell.m in Sources */,
+				B57E436E1F553EBE00DEC237 /* OneMovieContentView.m in Sources */,
 				B520A78C1F0CC1B400BB505B /* OneHttpManager.m in Sources */,
 				B55B05EA1F46BC23009550D2 /* OneAuthorHotData.m in Sources */,
 				B53CD1A21F42881100268C7C /* OneListModel.m in Sources */,
@@ -653,6 +670,7 @@
 				B520A7951F0DD28C00BB505B /* OneHomeViewController+Action.m in Sources */,
 				B5773A911F4A88110034CE81 /* OneMeViewController+NetWork.m in Sources */,
 				B51F22BE1F43EFCE00C66375 /* OneMyFollowCell.m in Sources */,
+				B57E43711F553EE500DEC237 /* OneMovieContentCellHeight.m in Sources */,
 				B520A7801F0B6E3C00BB505B /* OneBaseViewController.m in Sources */,
 				B57F0D6A1F41991400FD1AB7 /* OneAllViewController.m in Sources */,
 				B53CD1BE1F42E81100268C7C /* OneHotAuthorCell.m in Sources */,

@@ -86,8 +86,6 @@
     [mgr GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSString * resStr = [NSString stringWithFormat:@"%@",responseObject[@"data"][@"content_list"]];
-        NSLog(@"%@",resStr);
         if (success) {
             success(responseObject);
         }

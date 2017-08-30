@@ -7,7 +7,7 @@
 //
 
 #import "OneTopCell.h"
-#import "OneMenuView.h"
+#import "OneTipsMenuView.h"
 
 @interface OneTopCell ()
 
@@ -15,7 +15,7 @@
 @property (nonatomic, strong) UILabel * authorL;
 @property (nonatomic, strong) UILabel * contentL;
 @property (nonatomic, strong) UILabel * titleL;
-@property (nonatomic, strong) OneMenuView * menuV;
+@property (nonatomic, strong) OneTipsMenuView * menuV;
 @property (nonatomic, strong) UIView * seperateV;
 
 
@@ -60,7 +60,7 @@
     self.contentL = [[UILabel alloc] init];
     self.contentL.numberOfLines = 0;
     self.contentL.font = [UIFont systemFontOfSize:14];
-    self.contentL.textColor = [UIColor lightGrayColor];
+    self.contentL.textColor = [UIColor blackColor];
     [self.contentView addSubview:self.contentL];
     
     self.titleL = [[UILabel alloc] init];
@@ -70,7 +70,7 @@
     self.titleL.textColor = [UIColor lightGrayColor];
     [self.contentView addSubview:self.titleL];
     
-    self.menuV = [[OneMenuView alloc] init];
+    self.menuV = [[OneTipsMenuView alloc] init];
     [self.contentView addSubview:self.menuV];
     
     self.seperateV = [[UIView alloc] init];
@@ -86,6 +86,7 @@
     self.contentL.frame = cellHeight.contentFrame;
     self.titleL.frame = cellHeight.titleFrame;
     self.menuV.frame = cellHeight.menuFrame;
+    self.menuV.contentModel = cellHeight.contentModel;
     self.seperateV.frame = cellHeight.seperateFrame;
     
     

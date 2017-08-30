@@ -12,5 +12,10 @@
 @interface OneMenuView : UIView
 
 @property (nonatomic , strong) OneContentList * contentModel;
-
+@property (nonatomic, weak) UILabel  * timeL;
+@property (nonatomic, weak) UILabel  * likeCountL;
+@property (nonatomic, weak) UIButton * likeButton;
+@property (nonatomic, weak) UIButton * shareButton;
+- (void)setupSubViews;
+- (void)setMasnory;
 @end

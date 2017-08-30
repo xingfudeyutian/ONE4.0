@@ -10,10 +10,6 @@
 
 @interface OneMenuView ()
 
-@property (nonatomic, weak) UILabel  * timeL;
-@property (nonatomic, weak) UILabel  * likeCountL;
-@property (nonatomic, weak) UIButton * likeButton;
-@property (nonatomic, weak) UIButton * shareButton;
 
 @end
 
@@ -35,7 +31,7 @@
 {
     UILabel * timeL = [[UILabel alloc] init];
     self.timeL = timeL;
-    timeL.text = @"10小时前";
+//    timeL.text = @"10小时前";
     timeL.font = [UIFont systemFontOfSize:10];
     timeL.textColor = [UIColor lightGrayColor];
     [self.timeL sizeToFit];
@@ -43,7 +39,7 @@
     
     UILabel * likeCountL = [[UILabel alloc] init];
     self.likeCountL = likeCountL;
-    likeCountL.text = @"21313";
+//    likeCountL.text = @"21313";
     likeCountL.textColor = [UIColor lightGrayColor];
     likeCountL.font = [UIFont systemFontOfSize:10];
     [likeCountL sizeToFit];
@@ -68,35 +64,33 @@
         make.top.left.height.equalTo(self);
     }];
     
-    [self.likeCountL mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.bottom.equalTo(self);
-        make.right.equalTo(self.likeButton.mas_left).offset(-6);
-    }];
     
     [self.likeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.equalTo(self);
-        make.right.equalTo(self.shareButton.mas_left).offset(-20);
+        make.right.equalTo(self.likeCountL.mas_left);
         make.width.equalTo(self.likeButton.mas_height);
     }];
     
+    [self.likeCountL mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self).offset(-OneMergin/4);
+        make.height.mas_equalTo(OneMergin/2);
+        make.right.equalTo(self.shareButton.mas_left).offset(-OneMergin);
+    }];
+
     [self.shareButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.right.equalTo(self);
         make.width.equalTo(self.shareButton.mas_height);
     }];
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
+- (void)setContentModel:(OneContentList *)contentModel
+{
+    _contentModel = contentModel;
+    self.timeL.text = contentModel.post_date;
+    self.likeCountL.text = contentModel.like_count;
+
+}
+
+
 @end

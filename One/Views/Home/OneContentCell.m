@@ -79,6 +79,7 @@
     self.sourceTypeL.frame = cellHeight.sourceTypeLFrame;
     self.contentV.frame = cellHeight.contentVFrame;
     self.menuV.frame = cellHeight.menuVFrame;
+    self.menuV.contentModel = cellHeight.contentModel;
     self.seperateV.frame = cellHeight.seperateVFrame;
     NSString * sourceType = nil;
     switch (cellHeight.contentModel.category.integerValue)

@@ -80,6 +80,7 @@
     self.sourceTypeL.frame = musicCellHeight.sourceTypeLFrame;
     self.contentV.frame = musicCellHeight.contentVFrame;
     self.menuV.frame = musicCellHeight.menuVFrame;
+    self.menuV.contentModel = musicCellHeight.contentModel;
     self.seperateV.frame = musicCellHeight.seperateVFrame;
     self.sourceTypeL.text = [NSString stringWithFormat:@"- 音乐 -"];
     self.contentV.cellHeight = musicCellHeight;

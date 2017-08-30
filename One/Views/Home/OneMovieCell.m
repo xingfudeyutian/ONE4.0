@@ -83,6 +83,7 @@
     self.sourceTypeL.frame = movieCellHeight.sourceTypeLFrame;
     self.contentV.frame = movieCellHeight.contentVFrame;
     self.menuV.frame = movieCellHeight.menuVFrame;
+    self.menuV.contentModel = movieCellHeight.contentModel;
     self.seperateV.frame = movieCellHeight.seperateVFrame;
     self.sourceTypeL.text = [NSString stringWithFormat:@"- 影视 -"];
     self.contentV.cellHeight = movieCellHeight;

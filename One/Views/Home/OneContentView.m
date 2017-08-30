@@ -77,7 +77,7 @@
     self.authorL.text = [NSString stringWithFormat:@"文／%@",cellHeight.contentModel.author.user_name];
     [self.pictureImageV setImageWithURL:[NSURL URLWithString:cellHeight.contentModel.img_url] placeholder:nil];
     self.contentL.text = cellHeight.contentModel.forward;
-    
+   
 }
 
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		54BF356F8BB980D08A8809D0 /* libPods-One.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DCD24AEBAB3FD0383D131A /* libPods-One.a */; };
+		B51EB16B1F5560980020D4F3 /* OneTipsMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = B51EB16A1F5560980020D4F3 /* OneTipsMenuView.m */; };
 		B51F22B81F43EFA700C66375 /* OneUserCenterHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B51F22B71F43EFA700C66375 /* OneUserCenterHeaderCell.m */; };
 		B51F22BB1F43EFBA00C66375 /* OneMyCollectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B51F22BA1F43EFBA00C66375 /* OneMyCollectCell.m */; };
 		B51F22BE1F43EFCE00C66375 /* OneMyFollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B51F22BD1F43EFCE00C66375 /* OneMyFollowCell.m */; };
@@ -75,6 +76,8 @@
 		42DCD24AEBAB3FD0383D131A /* libPods-One.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-One.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		550E10BA832FF7DCD4E59405 /* Pods-One.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One/Pods-One.debug.xcconfig"; sourceTree = "<group>"; };
 		B3D6B964FACAE21585FEEDB3 /* Pods-One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.release.xcconfig"; path = "Pods/Target Support Files/Pods-One/Pods-One.release.xcconfig"; sourceTree = "<group>"; };
+		B51EB1691F5560980020D4F3 /* OneTipsMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneTipsMenuView.h; sourceTree = "<group>"; };
+		B51EB16A1F5560980020D4F3 /* OneTipsMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTipsMenuView.m; sourceTree = "<group>"; };
 		B51F22B61F43EFA700C66375 /* OneUserCenterHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneUserCenterHeaderCell.h; sourceTree = "<group>"; };
 		B51F22B71F43EFA700C66375 /* OneUserCenterHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneUserCenterHeaderCell.m; sourceTree = "<group>"; };
 		B51F22B91F43EFBA00C66375 /* OneMyCollectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMyCollectCell.h; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				B57E436D1F553EBE00DEC237 /* OneMovieContentView.m */,
 				B53CD1A91F42881D00268C7C /* OneMenuView.h */,
 				B53CD1AA1F42881D00268C7C /* OneMenuView.m */,
+				B51EB1691F5560980020D4F3 /* OneTipsMenuView.h */,
+				B51EB16A1F5560980020D4F3 /* OneTipsMenuView.m */,
 				B53CD1AB1F42881D00268C7C /* OneTroposphereCell.h */,
 				B53CD1AC1F42881D00268C7C /* OneTroposphereCell.m */,
 			);
@@ -679,6 +684,7 @@
 				B53CD1AE1F42881D00268C7C /* OneContentCell.m in Sources */,
 				B53CD1B41F428DAA00268C7C /* OneRollViewCell.m in Sources */,
 				B53B4B971F4E75B30035B334 /* OneContentCellHeight.m in Sources */,
+				B51EB16B1F5560980020D4F3 /* OneTipsMenuView.m in Sources */,
 				B53CD1B11F42881D00268C7C /* OneTroposphereCell.m in Sources */,
 				B53B4B9D1F4ED26C0035B334 /* OneMusicContentCellHeight.m in Sources */,
 				B53CD1B01F42881D00268C7C /* OneMenuView.m in Sources */,

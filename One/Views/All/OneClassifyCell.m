@@ -66,7 +66,7 @@
             
             UIButton * menuBtn = [[UIButton alloc] init];
             menuBtn.tag = tag;
-            menuBtn.backgroundColor = [UIColor redColor];
+//            menuBtn.backgroundColor = [UIColor redColor];
             menuBtn.frame = CGRectMake(col * (width + mergin), row * (width+mergin), width, width);
             [menuBtn setBackgroundImage:[UIImage imageNamed:[NSString stringWithFormat:@"menu_%d",tag]] forState:UIControlStateNormal];
             if ((row == 0 )&&(col == 2))

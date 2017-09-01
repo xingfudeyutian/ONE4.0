@@ -32,6 +32,8 @@
 		B53CD1B81F429A9D00268C7C /* OneClassifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53CD1B71F429A9D00268C7C /* OneClassifyCell.m */; };
 		B53CD1BB1F42D03200268C7C /* OneSubjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53CD1BA1F42D03200268C7C /* OneSubjectCell.m */; };
 		B53CD1BE1F42E81100268C7C /* OneHotAuthorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53CD1BD1F42E81100268C7C /* OneHotAuthorCell.m */; };
+		B555643A1F57F505000B294E /* OneFMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B55564391F57F505000B294E /* OneFMCell.m */; };
+		B555643D1F580109000B294E /* OneFMCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B555643C1F580109000B294E /* OneFMCellHeight.m */; };
 		B55B05E31F468D24009550D2 /* OneAllViewController+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B05E21F468D24009550D2 /* OneAllViewController+NetWork.m */; };
 		B55B05E61F468E36009550D2 /* OneBannerListData.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B05E51F468E36009550D2 /* OneBannerListData.m */; };
 		B55B05EA1F46BC23009550D2 /* OneAuthorHotData.m in Sources */ = {isa = PBXBuildFile; fileRef = B55B05E91F46BC23009550D2 /* OneAuthorHotData.m */; };
@@ -126,6 +128,10 @@
 		B53CD1BA1F42D03200268C7C /* OneSubjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSubjectCell.m; sourceTree = "<group>"; };
 		B53CD1BC1F42E81100268C7C /* OneHotAuthorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneHotAuthorCell.h; sourceTree = "<group>"; };
 		B53CD1BD1F42E81100268C7C /* OneHotAuthorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneHotAuthorCell.m; sourceTree = "<group>"; };
+		B55564381F57F505000B294E /* OneFMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneFMCell.h; sourceTree = "<group>"; };
+		B55564391F57F505000B294E /* OneFMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneFMCell.m; sourceTree = "<group>"; };
+		B555643B1F580109000B294E /* OneFMCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneFMCellHeight.h; sourceTree = "<group>"; };
+		B555643C1F580109000B294E /* OneFMCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneFMCellHeight.m; sourceTree = "<group>"; };
 		B55B05E11F468D24009550D2 /* OneAllViewController+NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneAllViewController+NetWork.h"; sourceTree = "<group>"; };
 		B55B05E21F468D24009550D2 /* OneAllViewController+NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OneAllViewController+NetWork.m"; sourceTree = "<group>"; };
 		B55B05E41F468E36009550D2 /* OneBannerListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneBannerListData.h; sourceTree = "<group>"; };
@@ -295,6 +301,8 @@
 				B53B4B9C1F4ED26C0035B334 /* OneMusicContentCellHeight.m */,
 				B57E436F1F553EE500DEC237 /* OneMovieContentCellHeight.h */,
 				B57E43701F553EE500DEC237 /* OneMovieContentCellHeight.m */,
+				B555643B1F580109000B294E /* OneFMCellHeight.h */,
+				B555643C1F580109000B294E /* OneFMCellHeight.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -336,6 +344,8 @@
 				B57E4A771F500FDB00F6E482 /* OneMusicContentCell.m */,
 				B57E43691F553E3E00DEC237 /* OneMovieCell.h */,
 				B57E436A1F553E3E00DEC237 /* OneMovieCell.m */,
+				B55564381F57F505000B294E /* OneFMCell.h */,
+				B55564391F57F505000B294E /* OneFMCell.m */,
 				B53CD1A71F42881D00268C7C /* OneContentView.h */,
 				B53CD1A81F42881D00268C7C /* OneContentView.m */,
 				B53B4B981F4ED0F20035B334 /* OneMusicContentView.h */,
@@ -670,6 +680,7 @@
 				B520A78C1F0CC1B400BB505B /* OneHttpManager.m in Sources */,
 				B55B05EA1F46BC23009550D2 /* OneAuthorHotData.m in Sources */,
 				B53CD1A21F42881100268C7C /* OneListModel.m in Sources */,
+				B555643D1F580109000B294E /* OneFMCellHeight.m in Sources */,
 				B58488D51F06458E00ED92ED /* main.m in Sources */,
 				B53B4B9A1F4ED0F20035B334 /* OneMusicContentView.m in Sources */,
 				B520A7951F0DD28C00BB505B /* OneHomeViewController+Action.m in Sources */,
@@ -688,6 +699,7 @@
 				B53CD1B11F42881D00268C7C /* OneTroposphereCell.m in Sources */,
 				B53B4B9D1F4ED26C0035B334 /* OneMusicContentCellHeight.m in Sources */,
 				B53CD1B01F42881D00268C7C /* OneMenuView.m in Sources */,
+				B555643A1F57F505000B294E /* OneFMCell.m in Sources */,
 				B53CD1A11F42881100268C7C /* OneListCellHeight.m in Sources */,
 				B520A7921F0DD27F00BB505B /* OneHomeViewController+NetWork.m in Sources */,
 				B59A68781F4D1F8600B251B5 /* OneTopCell.m in Sources */,

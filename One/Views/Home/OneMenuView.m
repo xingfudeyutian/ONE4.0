@@ -87,7 +87,10 @@
 - (void)setContentModel:(OneContentList *)contentModel
 {
     _contentModel = contentModel;
-    self.timeL.text = contentModel.post_date;
+    
+    
+    NSDate * date = [NSDate dateWithString:contentModel.post_date format:@"yyyy-MM-dd HH:mm:ss" timeZone:[NSTimeZone localTimeZone] locale:[NSLocale currentLocale]];
+    self.timeL.text = [NSString stringWithFormat:@"%ld月%ld日",(long)date.month,(long)date.day];
     self.likeCountL.text = contentModel.like_count;
 
 }

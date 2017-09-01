@@ -50,7 +50,7 @@
     self.pictureImageV = pictureImageV;
     pictureImageV.clipsToBounds = YES;
     pictureImageV.contentMode = UIViewContentModeScaleAspectFill;
-    pictureImageV.backgroundColor = [UIColor purpleColor];
+//    pictureImageV.backgroundColor = [UIColor purpleColor];
     [self addSubview:pictureImageV];
     
     UILabel * contentL = [[UILabel alloc] init];

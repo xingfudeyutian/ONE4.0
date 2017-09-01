@@ -11,6 +11,8 @@
 #import "OneTopCell.h"
 #import "OneMusicContentCell.h"
 #import "OneMovieCell.h"
+#import "OneFMCell.h"
+
 
 @interface OneBaseViewController ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
@@ -190,6 +192,15 @@
             return movieContentCell;
         }
             break;
+            
+        case 8:
+        {
+            OneFMCell * fmCell = [OneFMCell cellWithTableView:tableView];
+            fmCell.cellHeight = self.listCellHeightArray[indexPath.row];
+            return fmCell;
+        }
+            break;
+            
         default:
         {
             OneContentCell * contentCell = [OneContentCell cellWithTableView:tableView];

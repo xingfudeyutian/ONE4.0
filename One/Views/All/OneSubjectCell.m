@@ -44,7 +44,7 @@
     UIImageView * iconImageV = [[UIImageView alloc] init];
     self.iconImageV = iconImageV;
     iconImageV.clipsToBounds = YES;
-    iconImageV.backgroundColor = [UIColor orangeColor];
+//    iconImageV.backgroundColor = [UIColor orangeColor];
     [self.contentView addSubview:iconImageV];
     
     UILabel * contentL = [[UILabel alloc] init];
@@ -53,7 +53,7 @@
     contentL.textColor = [UIColor lightGrayColor];
     contentL.numberOfLines = 0;
     contentL.font = [UIFont systemFontOfSize:14];
-    contentL.text = @"哈哈哈及可是你看到女啊空间哦就哦就哦积极的咖啡啦科技发达了卡解放了空间啊舒服哈哈哈及可是你看到女啊空间哦就哦就哦积极的咖啡啦科技发达了卡解放了空间啊舒服哈哈哈及可是你看到女啊空间哦就哦就哦积极的咖啡啦科技发达了卡解放了空间啊舒服";
+//    contentL.text = @"哈哈哈及可是你看到女啊空间哦就哦就哦积极的咖啡啦科技发达了卡解放了空间啊舒服哈哈哈及可是你看到女啊空间哦就哦就哦积极的咖啡啦科技发达了卡解放了空间啊舒服哈哈哈及可是你看到女啊空间哦就哦就哦积极的咖啡啦科技发达了卡解放了空间啊舒服";
     [self.contentView addSubview:contentL];
     
     UIView * subView = [[UIView alloc] init];

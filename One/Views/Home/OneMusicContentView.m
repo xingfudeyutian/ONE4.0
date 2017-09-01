@@ -91,7 +91,8 @@
     
     UILabel * descL = [[UILabel alloc] init];
     self.descL = descL;
-    descL.text = @"STORIES OF MUSIC";
+    descL.font = [UIFont systemFontOfSize:12];
+    descL.textColor = [UIColor lightGrayColor];
     [self addSubview:descL];
     
     
@@ -100,7 +101,7 @@
     pictureImageV.clipsToBounds = YES;
     
     pictureImageV.contentMode = UIViewContentModeScaleAspectFill;
-    pictureImageV.backgroundColor = [UIColor purpleColor];
+//    pictureImageV.backgroundColor = [UIColor purpleColor];
     [self addSubview:pictureImageV];
     
     UIButton * menuBtn = [[UIButton alloc] init];
@@ -142,7 +143,7 @@
     self.authorL.text = [NSString stringWithFormat:@"文／%@",cellHeight.contentModel.author.user_name];
     [self.pictureImageV setImageWithURL:[NSURL URLWithString:cellHeight.contentModel.img_url] placeholder:nil];
     
-    self.descL.text = [NSString stringWithFormat:@"%@ ･ %@|%@",cellHeight.contentModel.music_name,cellHeight.contentModel.audio_author,cellHeight.contentModel.audio_album];
+    self.descL.text = [NSString stringWithFormat:@"%@ ･ %@ | %@",cellHeight.contentModel.music_name,cellHeight.contentModel.audio_author,cellHeight.contentModel.audio_album];
     self.contentL.text = cellHeight.contentModel.forward;
   
     

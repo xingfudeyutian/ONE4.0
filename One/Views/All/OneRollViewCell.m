@@ -46,7 +46,7 @@
     UIScrollView * scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
     scrollView.delegate = self;
-    scrollView.backgroundColor = [UIColor blackColor];
+//    scrollView.backgroundColor = [UIColor blackColor];
     scrollView.pagingEnabled = YES;
     [self.contentView addSubview:scrollView];
     

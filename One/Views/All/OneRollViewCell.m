@@ -93,7 +93,7 @@
         [imageView setImageWithURL:[NSURL URLWithString:bannerData.cover] placeholder:[UIImage imageNamed:@"ReadingPlaceHolder1"]];
         
         imageView.userInteractionEnabled = YES;
-        imageView.backgroundColor = i%2 == 0?[UIColor yellowColor]:[UIColor redColor];
+//        imageView.backgroundColor = i%2 == 0?[UIColor yellowColor]:[UIColor redColor];
         [self.scrollView addSubview:imageView];
     }
 }

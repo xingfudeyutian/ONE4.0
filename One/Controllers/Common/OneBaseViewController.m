@@ -53,7 +53,7 @@
     
     for (int i = 0; i<10 ;i++)
     {
-        UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(i*self.view.bounds.size.width, 0, self.view.bounds.size.width, scrollView.height)];
+        UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectMake(i*self.view.bounds.size.width, 0, self.view.bounds.size.width, scrollView.height) style:UITableViewStyleGrouped];
         tableView.tag = i;
 //        tableView.backgroundColor = i%2 == 0?[UIColor redColor]:[UIColor greenColor];
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -130,13 +130,23 @@
 {
     return self.listCellHeightArray.count;
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 1;
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 500;
+    return 250;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    return [UIView new];
+    UIImage * footImage = [UIImage imageNamed:@"feedsBottomPlaceHolder"];
+    UIView * footV = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, 250)];
+    UIImageView * imageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, OneMergin, footImage.size.width, footImage.size.height)];
+    imageV.centerX = footV.centerX;
+    imageV.image = footImage;
+    [footV addSubview:imageV];
+    return footV;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

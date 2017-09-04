@@ -51,6 +51,9 @@
     
     UIScrollView * scrollView = [[UIScrollView alloc] init];
     self.scrollView = scrollView;
+    [scrollView setBounces:NO];
+    scrollView.showsVerticalScrollIndicator = NO;
+    scrollView.showsHorizontalScrollIndicator = NO;
     [self.contentView addSubview:self.scrollView];
     
 }
@@ -81,7 +84,7 @@
             contentL.textAlignment = NSTextAlignmentCenter;
             contentL.backgroundColor =  [UIColor clearColor];
             contentL.textColor = [UIColor whiteColor];
-            contentL.numberOfLines = 0;
+//            contentL.numberOfLines = 0;
             contentL.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
             contentL.font = [UIFont systemFontOfSize:16];
             contentL.text =bannerData.title;

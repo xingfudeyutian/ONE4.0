@@ -11,6 +11,6 @@
 
 @interface OneHomeViewController (NetWork)
 
-- (void)requestHomeDataWithId;
+- (void)requestHomeDataWithDate:(NSString *)date;
 
 @end

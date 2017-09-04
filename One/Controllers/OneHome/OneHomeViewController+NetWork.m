@@ -12,18 +12,19 @@
 @implementation OneHomeViewController (NetWork)
 
  
-- (void)requestHomeDataWithId
+- (void)requestHomeDataWithDate:(NSString *)date
 {
     //首页文章
-    NSString * api =[NSString stringWithFormat:@"%@/0/北京市",Channel];
+    NSString * api =[NSString stringWithFormat:@"%@/%@/北京市?%@",Channel,date,@"platform=ios&sign=78153e725b54f19bb57778fb3af765a0&user_id=&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.2"];
     api = [api stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     //http://v3.wufazhuce.com:8000/api/channel/one/0/%E5%8C%97%E4%BA%AC%E5%B8%82?platform=ios&sign=18d70f7a4322065d0631ce4f3b4f7cc0&user_id=5919664&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.2
     
-    //[OneHttpManager urlWithApi:api]
-    [OneHttpManager get:@"http://v3.wufazhuce.com:8000/api/channel/one/0/%E5%8C%97%E4%BA%AC%E5%B8%82?platform=ios&sign=78153e725b54f19bb57778fb3af765a0&user_id=&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.2" params:nil success:^(id responseObject) {
+    
+    [OneHttpManager get:[OneHttpManager urlWithApi:api] params:nil success:^(id responseObject) {
         if ([responseObject[@"res"] integerValue] == 0)
         {
            
+            [self.listCellHeightArray removeAllObjects];
             self.listModel = [OneListModel modelWithDictionary:responseObject[@"data"]];
             for (OneContentList * model in self.listModel.content_list) {
                 

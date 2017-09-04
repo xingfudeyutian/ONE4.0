@@ -59,6 +59,8 @@
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         tableView.delegate = self;
         tableView.dataSource = self;
+        tableView.showsHorizontalScrollIndicator = NO;
+        tableView.showsVerticalScrollIndicator = NO;
         [self.scrollView addSubview:tableView];
     }
     
@@ -93,7 +95,20 @@
     self.pageControl.currentPage = page;
     
     self.tableView = self.scrollView.subviews[self.pageControl.currentPage];
-    [self.tableView reloadData];
+    
+    
+    NSDateFormatter* dateFormat = [[NSDateFormatter alloc] init];//实例化一个NSDateFormatter对象
+    
+    [dateFormat setDateFormat:@"yyyy-MM-dd"];//设定时间格式,这里可以设置成自己需要的格式
+    
+    NSString *currentDateStr = [dateFormat stringFromDate:[NSDate date]];
+    
+    NSDate * date = [NSDate date];
+    NSInteger currentday = date.day - page;
+    
+   
+    
+//    [self.tableView reloadData];
     
 }
 

@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "OneBannerListData.h"
-
+//#import "OneSubjectCellHeight.h"
 
 @interface OneSubjectCell : UITableViewCell
 
 @property (nonatomic, strong) OneBannerListData * bannerData;
+
+//@property (nonatomic, strong)OneSubjectCellHeight * cellHeight;
 
 + (OneSubjectCell *)cellWithTableView:(UITableView *)tableView;
 

@@ -54,7 +54,10 @@
              @"tag_list"            : [OneTagList class]
              };
 }
-
++ (NSDictionary *)modelCustomPropertyMapper
+{
+    return @{@"contentId" : @"id"};
+}
 @end
 
 @implementation OneWeather
@@ -69,5 +72,8 @@
              @"weather"               : @"OneWeather"
              };
 }
-
++ (NSDictionary *)modelCustomPropertyMapper
+{
+    return @{@"listId" : @"id"};
+}
 @end

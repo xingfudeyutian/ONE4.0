@@ -55,6 +55,9 @@
 		B58488EE1F06458E00ED92ED /* OneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B58488ED1F06458E00ED92ED /* OneTests.m */; };
 		B58488F91F06458E00ED92ED /* OneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B58488F81F06458E00ED92ED /* OneUITests.m */; };
 		B59A68781F4D1F8600B251B5 /* OneTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A68771F4D1F8600B251B5 /* OneTopCell.m */; };
+		B5E7CCC01F5E424E0090912B /* OneSubjectCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E7CCBF1F5E424E0090912B /* OneSubjectCellHeight.m */; };
+		B5E7CCC31F5E823E0090912B /* OneContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E7CCC21F5E823E0090912B /* OneContentViewController.m */; };
+		B5E7CCC61F5E826F0090912B /* OneContentViewController+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E7CCC51F5E826F0090912B /* OneContentViewController+NetWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +178,12 @@
 		B58488FA1F06458E00ED92ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B59A68761F4D1F8600B251B5 /* OneTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneTopCell.h; sourceTree = "<group>"; };
 		B59A68771F4D1F8600B251B5 /* OneTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTopCell.m; sourceTree = "<group>"; };
+		B5E7CCBE1F5E424E0090912B /* OneSubjectCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSubjectCellHeight.h; sourceTree = "<group>"; };
+		B5E7CCBF1F5E424E0090912B /* OneSubjectCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSubjectCellHeight.m; sourceTree = "<group>"; };
+		B5E7CCC11F5E823E0090912B /* OneContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneContentViewController.h; sourceTree = "<group>"; };
+		B5E7CCC21F5E823E0090912B /* OneContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneContentViewController.m; sourceTree = "<group>"; };
+		B5E7CCC41F5E826F0090912B /* OneContentViewController+NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneContentViewController+NetWork.h"; sourceTree = "<group>"; };
+		B5E7CCC51F5E826F0090912B /* OneContentViewController+NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OneContentViewController+NetWork.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +251,10 @@
 				B520A7911F0DD27F00BB505B /* OneHomeViewController+NetWork.m */,
 				B520A7931F0DD28C00BB505B /* OneHomeViewController+Action.h */,
 				B520A7941F0DD28C00BB505B /* OneHomeViewController+Action.m */,
+				B5E7CCC11F5E823E0090912B /* OneContentViewController.h */,
+				B5E7CCC21F5E823E0090912B /* OneContentViewController.m */,
+				B5E7CCC41F5E826F0090912B /* OneContentViewController+NetWork.h */,
+				B5E7CCC51F5E826F0090912B /* OneContentViewController+NetWork.m */,
 			);
 			path = OneHome;
 			sourceTree = "<group>";
@@ -284,6 +297,8 @@
 				B55B05E51F468E36009550D2 /* OneBannerListData.m */,
 				B55B05E81F46BC23009550D2 /* OneAuthorHotData.h */,
 				B55B05E91F46BC23009550D2 /* OneAuthorHotData.m */,
+				B5E7CCBE1F5E424E0090912B /* OneSubjectCellHeight.h */,
+				B5E7CCBF1F5E424E0090912B /* OneSubjectCellHeight.m */,
 			);
 			path = All;
 			sourceTree = "<group>";
@@ -693,8 +708,10 @@
 				B57E4A781F500FDB00F6E482 /* OneMusicContentCell.m in Sources */,
 				B51F22BB1F43EFBA00C66375 /* OneMyCollectCell.m in Sources */,
 				B53CD1AE1F42881D00268C7C /* OneContentCell.m in Sources */,
+				B5E7CCC01F5E424E0090912B /* OneSubjectCellHeight.m in Sources */,
 				B53CD1B41F428DAA00268C7C /* OneRollViewCell.m in Sources */,
 				B53B4B971F4E75B30035B334 /* OneContentCellHeight.m in Sources */,
+				B5E7CCC61F5E826F0090912B /* OneContentViewController+NetWork.m in Sources */,
 				B51EB16B1F5560980020D4F3 /* OneTipsMenuView.m in Sources */,
 				B53CD1B11F42881D00268C7C /* OneTroposphereCell.m in Sources */,
 				B53B4B9D1F4ED26C0035B334 /* OneMusicContentCellHeight.m in Sources */,
@@ -704,6 +721,7 @@
 				B520A7921F0DD27F00BB505B /* OneHomeViewController+NetWork.m in Sources */,
 				B59A68781F4D1F8600B251B5 /* OneTopCell.m in Sources */,
 				B5773A8E1F4A85E80034CE81 /* OneDiaryModel.m in Sources */,
+				B5E7CCC31F5E823E0090912B /* OneContentViewController.m in Sources */,
 				B5773A941F4AB88E0034CE81 /* OneMoreView.m in Sources */,
 				B55B05F11F46DB9C009550D2 /* OneAllViewController+Actions.m in Sources */,
 			);

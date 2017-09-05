@@ -9,6 +9,8 @@
 #import "OneAllViewController+NetWork.h"
 #import "OneBannerListData.h"
 #import "OneAuthorHotData.h"
+#import "OneSubjectCellHeight.h"
+
 
 @implementation OneAllViewController (NetWork)
 
@@ -33,7 +35,18 @@
     [OneHttpManager get:[OneHttpManager urlWithApi:api] params:@"last_id=0&platform=ios&sign=e944f8e379b286cf632f4271d16b970b&user_id=5919664&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.1" success:^(id responseObject) {
         if ([responseObject[@"res"] integerValue] == 0)
         {
+//            NSArray * bannerArray = [NSArray modelArrayWithClass:[OneBannerListData class] json:responseObject[@"data"]];
+
+//            for (OneBannerListData * bannerData in bannerArray)
+//            {
+//                OneSubjectCellHeight * cellHeight = [[OneSubjectCellHeight alloc] init];
+//                cellHeight.bannerData = bannerData;
+//                [self.bannerList4 addObject:cellHeight];
+//            }
+            
             self.bannerList4 = (NSMutableArray *)[NSArray modelArrayWithClass:[OneBannerListData class] json:responseObject[@"data"]];
+
+            
             [self.tableView reloadData];
         }
     } failure:^(NSError *error) {

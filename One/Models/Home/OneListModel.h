@@ -65,7 +65,7 @@
 @property (nonatomic, copy) NSString * pic_info;
 @property (nonatomic, strong) OneAuthor * author;
 @property (nonatomic, copy) NSString * movie_story_id;
-@property (nonatomic, copy) NSString * id;
+@property (nonatomic, copy) NSString * contentId;
 @property (nonatomic, copy) NSString * forward;
 @property (nonatomic, copy) NSString * category;
 @property (nonatomic, copy) NSString * post_date;
@@ -129,7 +129,7 @@
 @interface OneListModel : NSObject
 
 @property (nonatomic, copy) NSString * date;
-@property (nonatomic, copy) NSString * id;
+@property (nonatomic, copy) NSString * listId;
 @property (nonatomic, strong) NSArray<OneContentList *> * content_list;
 @property (nonatomic, strong) OneWeather * weather;
 

@@ -8,6 +8,9 @@
 
 #import "OneHomeViewController.h"
 #import "OneHomeViewController+NetWork.h"
+
+#import "OneContentViewController.h"
+
 @interface OneHomeViewController ()
 
 @end
@@ -59,6 +62,53 @@
     
 
     //    [self.tableView reloadData];
+    
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        return;
+    }
+    
+    
+    OneContentList * contentModel = [self.listCellHeightArray[indexPath.row] contentModel];
+    
+//    2 连载
+//    3 问答
+//    4 音乐
+//    5 影视
+//    8 电台
+    
+    
+    NSString * path = @"essay";
+    switch (contentModel.category.integerValue)
+    {
+        case 2:
+            path = @"serialcontent";
+            break;
+        case 3:
+            path = @"question";
+            break;
+        case 4:
+            path = @"music";
+            break;
+        case 5:
+            path = @"movie";
+            break;
+        case 8:
+            path = @"radio";
+            break;
+        default:
+            break;
+    }
+
+    NSString * loadUrl = [NSString stringWithFormat:@"http://v3.wufazhuce.com:8000/api/%@/htmlcontent/%@?platform=ios&sign=0db7a982c84f9ef991503877d9279aec&source=summary&source_id=%@&user_id=&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.2",path,contentModel.content_id,contentModel.contentId];
+    
+    OneContentViewController * contentVC = [[OneContentViewController alloc] init];
+    contentVC.loadUrl = loadUrl;
+    contentVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:contentVC animated:YES];
     
 }
 

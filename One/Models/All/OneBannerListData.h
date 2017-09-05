@@ -22,6 +22,7 @@
  */
 @property (nonatomic, copy) NSString * bannerId;
 @property (nonatomic, copy) NSString * cover;
+@property (nonatomic, assign) NSInteger cover_height;
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * category;
 @property (nonatomic, copy) NSString * content_id;

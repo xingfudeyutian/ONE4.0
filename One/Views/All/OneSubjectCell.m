@@ -100,7 +100,17 @@
     
 }
 
-
+//-(void)setCellHeight:(OneSubjectCellHeight *)cellHeight
+//{
+//    _cellHeight = cellHeight;
+//    
+//    self.iconImageV.frame = cellHeight.iconImageVFrame;
+//    self.contentL.frame = cellHeight.contentLFrame;
+//    
+//    
+//    [self.iconImageV setImageWithURL:[NSURL URLWithString:cellHeight.bannerData.cover] placeholder:[UIImage imageNamed:@"ReadingPlaceHolder1"]];
+//    self.contentL.text = cellHeight.bannerData.title;
+//}
 
 
 @end

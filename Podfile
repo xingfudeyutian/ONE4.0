@@ -5,5 +5,6 @@ pod 'SDWebImage', '~> 3.7.5'
 pod 'Masonry', '~> 0.6.4'
 pod 'YYKit'
 pod 'MJRefresh'
+pod 'MBProgressHUD'
 
 end

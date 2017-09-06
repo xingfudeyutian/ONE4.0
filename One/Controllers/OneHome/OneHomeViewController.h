@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "OneSearchController.h"
 
 @interface OneHomeViewController : OneBaseViewController
 

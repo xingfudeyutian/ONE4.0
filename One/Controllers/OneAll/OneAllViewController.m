@@ -31,6 +31,14 @@
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"all_title_view"]];
     
     
+    UIButton * rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 30)];
+    rightBtn.tag = 1;
+    [rightBtn setImage:[UIImage imageNamed:@"search_gray"] forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(navigationAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    
+    
+    
     UITableView * tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     self.tableView = tableView;
     tableView.backgroundColor = [UIColor clearColor];

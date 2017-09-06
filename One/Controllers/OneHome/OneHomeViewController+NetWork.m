@@ -14,6 +14,7 @@
  
 - (void)requestHomeDataWithDate:(NSString *)date
 {
+    [self showLoading];
     //首页文章
     NSString * api =[NSString stringWithFormat:@"%@/%@/北京市?%@",Channel,date,@"platform=ios&sign=78153e725b54f19bb57778fb3af765a0&user_id=&uuid=48EB5D8A-5557-470B-8810-2CD3188E4D38&version=v4.3.2"];
     api = [api stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -21,6 +22,7 @@
     
     
     [OneHttpManager get:[OneHttpManager urlWithApi:api] params:nil success:^(id responseObject) {
+        [self hideLoading];
         if ([responseObject[@"res"] integerValue] == 0)
         {
            
@@ -92,7 +94,7 @@
             [self.tableView reloadData];
         }
     } failure:^(NSError *error) {
-        
+        [self hideLoading];
     }];
 }
 

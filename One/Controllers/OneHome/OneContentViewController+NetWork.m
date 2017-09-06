@@ -12,18 +12,15 @@
 
 - (void)requestContentWithUrl
 {
-    
+    [self setGIFLoading];
     [OneHttpManager get:self.loadUrl params:nil success:^(id responseObject) {
         NSLog(@"%@",responseObject);
-        
-        
+        [self hideLoading];
         [self.webView loadHTMLString:responseObject[@"data"][@"html_content"] baseURL:nil];
         
     } failure:^(NSError *error) {
-        
+         [self hideLoading];
     }];
-    
-    
 }
 
 @end

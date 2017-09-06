@@ -8,7 +8,7 @@
 
 #import "OneHomeViewController.h"
 #import "OneHomeViewController+NetWork.h"
-
+#import "OneHomeViewController+Action.h"
 #import "OneContentViewController.h"
 
 @interface OneHomeViewController ()
@@ -19,9 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton * rightBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 30)];
+    rightBtn.tag = 1;
+    [rightBtn setImage:[UIImage imageNamed:@"search_gray"] forState:UIControlStateNormal];
+    [rightBtn addTarget:self action:@selector(navigationAction:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    
+    
     //当天
     [self requestHomeDataWithDate:@"0"];
 }
+
+
 
 #pragma mark-----UIScrollViewDelegate---------
 //实现协议UIScrollViewDelegate的方法，必须实现的

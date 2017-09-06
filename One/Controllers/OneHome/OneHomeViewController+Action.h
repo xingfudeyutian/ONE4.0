@@ -10,4 +10,6 @@
 
 @interface OneHomeViewController (Action)
 
+- (void)navigationAction:(UIButton*)sender;
+
 @end

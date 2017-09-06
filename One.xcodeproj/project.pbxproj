@@ -18,6 +18,16 @@
 		B520A78C1F0CC1B400BB505B /* OneHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B520A78B1F0CC1B400BB505B /* OneHttpManager.m */; };
 		B520A7921F0DD27F00BB505B /* OneHomeViewController+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = B520A7911F0DD27F00BB505B /* OneHomeViewController+NetWork.m */; };
 		B520A7951F0DD28C00BB505B /* OneHomeViewController+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = B520A7941F0DD28C00BB505B /* OneHomeViewController+Action.m */; };
+		B52D46C01F5F90020025A312 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B52D46BF1F5F90020025A312 /* UIViewController+HUD.m */; };
+		B52D46CA1F5F99470025A312 /* loading_book_night@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C21F5F99470025A312 /* loading_book_night@3x.gif */; };
+		B52D46CB1F5F99470025A312 /* loading_book@3x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C31F5F99470025A312 /* loading_book@3x.gif */; };
+		B52D46CC1F5F99470025A312 /* loading_gray@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C41F5F99470025A312 /* loading_gray@2x.gif */; };
+		B52D46CD1F5F99470025A312 /* loading_night@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C51F5F99470025A312 /* loading_night@2x.gif */; };
+		B52D46CE1F5F99470025A312 /* loading@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C61F5F99470025A312 /* loading@2x.gif */; };
+		B52D46CF1F5F99470025A312 /* rate_nav_night.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C71F5F99470025A312 /* rate_nav_night.gif */; };
+		B52D46D01F5F99470025A312 /* rate_nav.gif in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C81F5F99470025A312 /* rate_nav.gif */; };
+		B52D46D11F5F99470025A312 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B52D46C91F5F99470025A312 /* yw_1222.jpg */; };
+		B52D46D41F5FCEA30025A312 /* OneSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52D46D31F5FCEA30025A312 /* OneSearchController.m */; };
 		B53B4B941F4E73BF0035B334 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53B4B931F4E73BF0035B334 /* ImageIO.framework */; };
 		B53B4B971F4E75B30035B334 /* OneContentCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B53B4B961F4E75B30035B334 /* OneContentCellHeight.m */; };
 		B53B4B9A1F4ED0F20035B334 /* OneMusicContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = B53B4B991F4ED0F20035B334 /* OneMusicContentView.m */; };
@@ -103,6 +113,18 @@
 		B520A7911F0DD27F00BB505B /* OneHomeViewController+NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OneHomeViewController+NetWork.m"; sourceTree = "<group>"; };
 		B520A7931F0DD28C00BB505B /* OneHomeViewController+Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneHomeViewController+Action.h"; sourceTree = "<group>"; };
 		B520A7941F0DD28C00BB505B /* OneHomeViewController+Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OneHomeViewController+Action.m"; sourceTree = "<group>"; };
+		B52D46BE1F5F90020025A312 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		B52D46BF1F5F90020025A312 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		B52D46C21F5F99470025A312 /* loading_book_night@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading_book_night@3x.gif"; sourceTree = "<group>"; };
+		B52D46C31F5F99470025A312 /* loading_book@3x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading_book@3x.gif"; sourceTree = "<group>"; };
+		B52D46C41F5F99470025A312 /* loading_gray@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading_gray@2x.gif"; sourceTree = "<group>"; };
+		B52D46C51F5F99470025A312 /* loading_night@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading_night@2x.gif"; sourceTree = "<group>"; };
+		B52D46C61F5F99470025A312 /* loading@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "loading@2x.gif"; sourceTree = "<group>"; };
+		B52D46C71F5F99470025A312 /* rate_nav_night.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rate_nav_night.gif; sourceTree = "<group>"; };
+		B52D46C81F5F99470025A312 /* rate_nav.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = rate_nav.gif; sourceTree = "<group>"; };
+		B52D46C91F5F99470025A312 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		B52D46D21F5FCEA30025A312 /* OneSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSearchController.h; sourceTree = "<group>"; };
+		B52D46D31F5FCEA30025A312 /* OneSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSearchController.m; sourceTree = "<group>"; };
 		B53B4B931F4E73BF0035B334 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B53B4B951F4E75B30035B334 /* OneContentCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneContentCellHeight.h; sourceTree = "<group>"; };
 		B53B4B961F4E75B30035B334 /* OneContentCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneContentCellHeight.m; sourceTree = "<group>"; };
@@ -238,6 +260,8 @@
 				B520A7631F0B68C800BB505B /* OneTabBarController.m */,
 				B520A77E1F0B6E3C00BB505B /* OneBaseViewController.h */,
 				B520A77F1F0B6E3C00BB505B /* OneBaseViewController.m */,
+				B52D46D21F5FCEA30025A312 /* OneSearchController.h */,
+				B52D46D31F5FCEA30025A312 /* OneSearchController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -286,8 +310,25 @@
 				B520A7891F0CC01E00BB505B /* OneHttpLinks.h */,
 				B520A78A1F0CC1B400BB505B /* OneHttpManager.h */,
 				B520A78B1F0CC1B400BB505B /* OneHttpManager.m */,
+				B52D46BE1F5F90020025A312 /* UIViewController+HUD.h */,
+				B52D46BF1F5F90020025A312 /* UIViewController+HUD.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		B52D46C11F5F99320025A312 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B52D46C21F5F99470025A312 /* loading_book_night@3x.gif */,
+				B52D46C31F5F99470025A312 /* loading_book@3x.gif */,
+				B52D46C41F5F99470025A312 /* loading_gray@2x.gif */,
+				B52D46C51F5F99470025A312 /* loading_night@2x.gif */,
+				B52D46C61F5F99470025A312 /* loading@2x.gif */,
+				B52D46C71F5F99470025A312 /* rate_nav_night.gif */,
+				B52D46C81F5F99470025A312 /* rate_nav.gif */,
+				B52D46C91F5F99470025A312 /* yw_1222.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		B53CD19A1F42881100268C7C /* All */ = {
@@ -451,6 +492,7 @@
 				B58488DF1F06458E00ED92ED /* Assets.xcassets */,
 				B58488E11F06458E00ED92ED /* LaunchScreen.storyboard */,
 				B58488E41F06458E00ED92ED /* Info.plist */,
+				B52D46C11F5F99320025A312 /* Resource */,
 				B58488D31F06458E00ED92ED /* Supporting Files */,
 			);
 			path = One;
@@ -606,7 +648,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B58488E31F06458E00ED92ED /* LaunchScreen.storyboard in Resources */,
+				B52D46CA1F5F99470025A312 /* loading_book_night@3x.gif in Resources */,
+				B52D46D11F5F99470025A312 /* yw_1222.jpg in Resources */,
+				B52D46CC1F5F99470025A312 /* loading_gray@2x.gif in Resources */,
+				B52D46CE1F5F99470025A312 /* loading@2x.gif in Resources */,
+				B52D46CB1F5F99470025A312 /* loading_book@3x.gif in Resources */,
 				B58488E01F06458E00ED92ED /* Assets.xcassets in Resources */,
+				B52D46D01F5F99470025A312 /* rate_nav.gif in Resources */,
+				B52D46CD1F5F99470025A312 /* loading_night@2x.gif in Resources */,
+				B52D46CF1F5F99470025A312 /* rate_nav_night.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +761,8 @@
 				B5E7CCC01F5E424E0090912B /* OneSubjectCellHeight.m in Sources */,
 				B53CD1B41F428DAA00268C7C /* OneRollViewCell.m in Sources */,
 				B53B4B971F4E75B30035B334 /* OneContentCellHeight.m in Sources */,
+				B52D46D41F5FCEA30025A312 /* OneSearchController.m in Sources */,
+				B52D46C01F5F90020025A312 /* UIViewController+HUD.m in Sources */,
 				B5E7CCC61F5E826F0090912B /* OneContentViewController+NetWork.m in Sources */,
 				B51EB16B1F5560980020D4F3 /* OneTipsMenuView.m in Sources */,
 				B53CD1B11F42881D00268C7C /* OneTroposphereCell.m in Sources */,

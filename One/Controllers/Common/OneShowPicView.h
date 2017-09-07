@@ -1,5 +1,5 @@
 //
-//  OneShowPictureViewController.h
+//  OneShowPicView.h
 //  One
 //
 //  Created by hanyutong on 2017/9/7.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OneShowPictureViewController : UIViewController
+@interface OneShowPicView : UIView
+
+@property (nonatomic, strong) OneContentList * contentData;
+
 
 @end

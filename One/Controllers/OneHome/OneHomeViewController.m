@@ -10,6 +10,8 @@
 #import "OneHomeViewController+NetWork.h"
 #import "OneHomeViewController+Action.h"
 #import "OneContentViewController.h"
+#import "OneShowPicView.h"
+
 
 @interface OneHomeViewController ()
 
@@ -77,19 +79,23 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    OneContentList * contentModel = [self.listCellHeightArray[indexPath.row] contentModel];
+    //    1 图文
+    //    2 连载
+    //    3 问答
+    //    4 音乐
+    //    5 影视
+    //    8 电台
+
     if (indexPath.row == 0) {
+        //图文
+        
+        OneShowPicView * showPicView = [[OneShowPicView alloc] initWithFrame:CGRectMake(0, 0, MAINSCREEN_WIDTH, MAINSCREEN_HEIGHT)];
+        showPicView.contentData = contentModel;
+        
+        [[UIApplication sharedApplication].keyWindow addSubview:showPicView];
         return;
     }
-    
-    
-    OneContentList * contentModel = [self.listCellHeightArray[indexPath.row] contentModel];
-    
-//    2 连载
-//    3 问答
-//    4 音乐
-//    5 影视
-//    8 电台
-    
     
     NSString * path = @"essay";
     switch (contentModel.category.integerValue)

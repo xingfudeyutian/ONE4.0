@@ -9,5 +9,6 @@
 #import "OneAllViewController.h"
 
 @interface OneAllViewController (Actions)
+- (void)navigationAction:(UIButton*)sender;
 
 @end

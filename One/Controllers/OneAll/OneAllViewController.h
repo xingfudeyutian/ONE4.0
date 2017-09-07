@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OneSearchController.h"
 
 
 @interface OneAllViewController : UIViewController

@@ -64,6 +64,7 @@
 		B58488E31F06458E00ED92ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58488E11F06458E00ED92ED /* LaunchScreen.storyboard */; };
 		B58488EE1F06458E00ED92ED /* OneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B58488ED1F06458E00ED92ED /* OneTests.m */; };
 		B58488F91F06458E00ED92ED /* OneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B58488F81F06458E00ED92ED /* OneUITests.m */; };
+		B58875C01F612CFF0035AB80 /* OneShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B58875BF1F612CFF0035AB80 /* OneShowPictureViewController.m */; };
 		B59A68781F4D1F8600B251B5 /* OneTopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A68771F4D1F8600B251B5 /* OneTopCell.m */; };
 		B5E7CCC01F5E424E0090912B /* OneSubjectCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E7CCBF1F5E424E0090912B /* OneSubjectCellHeight.m */; };
 		B5E7CCC31F5E823E0090912B /* OneContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E7CCC21F5E823E0090912B /* OneContentViewController.m */; };
@@ -198,6 +199,8 @@
 		B58488F41F06458E00ED92ED /* OneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58488F81F06458E00ED92ED /* OneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneUITests.m; sourceTree = "<group>"; };
 		B58488FA1F06458E00ED92ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58875BE1F612CFF0035AB80 /* OneShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneShowPictureViewController.h; sourceTree = "<group>"; };
+		B58875BF1F612CFF0035AB80 /* OneShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneShowPictureViewController.m; sourceTree = "<group>"; };
 		B59A68761F4D1F8600B251B5 /* OneTopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneTopCell.h; sourceTree = "<group>"; };
 		B59A68771F4D1F8600B251B5 /* OneTopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneTopCell.m; sourceTree = "<group>"; };
 		B5E7CCBE1F5E424E0090912B /* OneSubjectCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSubjectCellHeight.h; sourceTree = "<group>"; };
@@ -262,6 +265,8 @@
 				B520A77F1F0B6E3C00BB505B /* OneBaseViewController.m */,
 				B52D46D21F5FCEA30025A312 /* OneSearchController.h */,
 				B52D46D31F5FCEA30025A312 /* OneSearchController.m */,
+				B58875BE1F612CFF0035AB80 /* OneShowPictureViewController.h */,
+				B58875BF1F612CFF0035AB80 /* OneShowPictureViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -752,6 +757,7 @@
 				B5773A911F4A88110034CE81 /* OneMeViewController+NetWork.m in Sources */,
 				B51F22BE1F43EFCE00C66375 /* OneMyFollowCell.m in Sources */,
 				B57E43711F553EE500DEC237 /* OneMovieContentCellHeight.m in Sources */,
+				B58875C01F612CFF0035AB80 /* OneShowPictureViewController.m in Sources */,
 				B520A7801F0B6E3C00BB505B /* OneBaseViewController.m in Sources */,
 				B57F0D6A1F41991400FD1AB7 /* OneAllViewController.m in Sources */,
 				B53CD1BE1F42E81100268C7C /* OneHotAuthorCell.m in Sources */,

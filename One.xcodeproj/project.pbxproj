@@ -186,7 +186,7 @@
 		B57F0D661F41991400FD1AB7 /* OneAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneAllViewController.m; sourceTree = "<group>"; };
 		B57F0D681F41991400FD1AB7 /* OneMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneMeViewController.h; sourceTree = "<group>"; };
 		B57F0D691F41991400FD1AB7 /* OneMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneMeViewController.m; sourceTree = "<group>"; };
-		B58488D01F06458E00ED92ED /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58488D01F06458E00ED92ED /* 一个.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "一个.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58488D41F06458E00ED92ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B58488D61F06458E00ED92ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B58488D71F06458E00ED92ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -477,7 +477,7 @@
 		B58488D11F06458E00ED92ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B58488D01F06458E00ED92ED /* One.app */,
+				B58488D01F06458E00ED92ED /* 一个.app */,
 				B58488E91F06458E00ED92ED /* OneTests.xctest */,
 				B58488F41F06458E00ED92ED /* OneUITests.xctest */,
 			);
@@ -560,7 +560,7 @@
 			);
 			name = One;
 			productName = One;
-			productReference = B58488D01F06458E00ED92ED /* One.app */;
+			productReference = B58488D01F06458E00ED92ED /* 一个.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B58488E81F06458E00ED92ED /* OneTests */ = {
@@ -931,7 +931,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.xxx.One;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "一个";
 			};
 			name = Debug;
 		};
@@ -946,7 +946,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xztz.xxx.One;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "一个";
 			};
 			name = Release;
 		};

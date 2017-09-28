@@ -21,7 +21,6 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.backgroundColor = [UIColor redColor];
    
     OneTabBarController *tabController = [[OneTabBarController alloc] init];
 //    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:tabController];
